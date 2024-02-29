@@ -1,9 +1,17 @@
 body {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    color: white;
+    background-color: #F8FAE5;
+}
+
+
+header {
+    background-color: #F8FAE5;
+}
+footer {
+    background-color: #43766C;
 }
 
 /* h1 {
