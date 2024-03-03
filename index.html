@@ -70,14 +70,14 @@
   </div>
 </nav>
 <!-- ----------------- -->
-<!-- "Welcome to our online vintage clothing store, where timeless elegance meets modern convenience. Explore our curated collection of one-of-a-kind pieces that celebrate the charm of yesteryears. 
-    From retro dresses to classic accessories, discover your unique style statement with our handpicked selections." -->
+
+<!-- home page main content -->
 <main>
   <div class="welcome-paragraph row">
     <div class="col main-text-sections">Timeless Elegance</div>
-    <div class="col main-text-sections">Modern Convenience
+    <div class="col main-text-sections">Modern Convience
     </div>
-    <div class="col main-text-sections">Charm of Yesteryears</div>
+    <div class="col main-text-sections">Charm of the Past</div>
   </div>
   <div class="main-text-sections welcome-paragraph row bg-secondary">
     <div class="col whitecolor">EXPLORE OUR COLLECTION</div>
@@ -93,7 +93,6 @@
       <img id="slide-1" src="./img/vintage-clothes1.avif" alt="vintage clothes">
       <img id="slide-2" src="./img/vintage-sweater3.jpg" alt="more vinatge clohes">
       <img id="slide-3" src="./img/vintage-clothes2.avif" alt="vintage sweater">
-      <!-- <img id="slide-4" src="./img/vintage-sweater2.jpg" alt="vintage sweater"> -->
       <img id="slide-5" src="./img/vintage-sweater1.avif" alt="vintage sweater">
 
 
@@ -102,7 +101,6 @@
       <a href="#slide-1"></a>
       <a href="#slide-2"></a>
       <a href="#slide-3"></a>
-      <!-- <a href="#slide-4"></a> -->
       <a href="#slide-5"></a>
     </div>
   </div>
@@ -110,15 +108,18 @@
 
 <br>
 <div class="main-text-sections welcome-paragraph row bg-secondary">
-    <div class="col whitecolor"> </div>
+    <div class="col whitecolor"> SEE MORE</div>
   </div>
 
-
+<!-- iframe youtube video -->
   <section class="iframe-container" id="iframe">
     <div class="iframe">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/RdS9zct7r-k?si=HXAkFpSlUNiidh5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </section>
+
+
+  <!-- footer with font awesome icons -->
 <footer>Visit us on Social Media!
     <div class="icon-container">
         <i class="fa-brands fa-instagram"></i>
@@ -129,3 +130,66 @@
 </footer>
 </body>
 </html>
+
+
+
+<!-- 3/2/2024 -->
+<!-- how do you put a border around a div?
+ChatGPT
+To put a border around a <div> element in HTML, you can use the CSS border property. Here's how you can do it:
+
+css
+Copy code
+/* CSS */
+.myDiv {
+    border: 2px solid black; /* Specifies a solid black border with a width of 2 pixels */
+    /* You can customize the border color, style, and width as per your requirement */
+}
+In the above CSS snippet, .myDiv is the class name of your <div> element. The border property sets the style, width, and color of the border. You can adjust the values (such as the color, width, and style) according to your design preferences.
+
+User
+how do i get my website to not be able to scroll at all on the x axis
+ChatGPT
+To prevent scrolling on the x-axis (horizontal scrolling) in your website, you can use CSS to set the overflow-x property of the <body> or a container element to hidden. Here's how you can do it:
+
+css
+Copy code
+body {
+    overflow-x: hidden;
+}
+By adding this CSS to your website's stylesheet, you're essentially telling the browser not to display horizontal scrollbars even if the content overflows horizontally. This effectively prevents users from scrolling horizontally.
+
+If you want to restrict horizontal scrolling for a specific container instead of the entire page, you can apply the same CSS to that container's class or ID.
+
+css
+Copy code
+.container {
+    overflow-x: hidden;
+}
+Replace .container with the appropriate class or ID of your container element.
+
+Remember, this CSS will prevent horizontal scrolling but won't affect vertical scrolling. If you want to disable vertical scrolling as well, you can set overflow-y: hidden; along with overflow-x: hidden;. -->
+
+
+<!-- ow do i change the pointer
+ChatGPT
+To change the cursor pointer style when hovering over an element, you can use the cursor property in CSS. Here's how you can change the cursor pointer:
+
+css
+Copy code
+.button:hover {
+    cursor: pointer; /* Change cursor to a pointer */
+}
+In the above code:
+
+.button:hover is the CSS selector for the hover state of the element with the class .button.
+cursor: pointer; sets the cursor style to a pointer, indicating to users that the element is clickable.
+You can use different cursor values to change the cursor style. Here are some commonly used cursor values:
+
+pointer: Displays a pointer (usually a hand) indicating a link or clickable element.
+default: Displays the default cursor, typically an arrow.
+help: Displays a help cursor, usually an arrow with a question mark.
+crosshair: Displays a crosshair, typically used to indicate areas where selection is allowed.
+And there are many more cursor values available in CSS.
+
+Choose the appropriate cursor style based on the interaction you want to indicate to users when they hover over the element. -->
